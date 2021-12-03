@@ -14,7 +14,7 @@ namespace ConsoleApp1
         {
 
             List<Bug> bugs = new List<Bug>();
-            List<Step> steps = new List<Step>();
+            List<Step> steps = new List<Step>(); // сделал две разных коллекции степов, одна в Program и заполняется через основное меню, и другая в TestCase.cs, заполняется при создании кейсов. Но я предполагаю, что коллекция шагов должна быть только в классе TestCase, в принципе это не тяжело исправить, но на всякий случай оставил так.  
             List<TestCase> testCases = new List<TestCase>();
             
 
@@ -85,6 +85,7 @@ namespace ConsoleApp1
                             Step step = new Step();
                             step.Fill();
                             steps.Add(step);
+
 
                             break;
                         case 5:
